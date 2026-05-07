@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 import Footer from './components/Footer';
+import FloatingCart from './components/FloatingCart';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import Cart from './pages/Cart';
@@ -10,7 +11,7 @@ function App() {
   return (
     <Router>
       <div className="app-container">
-        <Navbar />
+        <Header />
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -19,6 +20,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <FloatingCart />
       </div>
     </Router>
   );
