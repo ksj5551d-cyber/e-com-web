@@ -10,9 +10,9 @@ const Header = () => {
         <div className="flex align-center gap-2">
           <Link to="/" className="logo" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
             <img 
-              src="https://blinkit.com/d6906236b2880c592e82.png" 
+              src="https://tse3.mm.bing.net/th/id/OIP.QVNQYP6K48CwkcHrZHJkRQHaHa?pid=ImgDet&w=60&h=60&c=7&rs=1&o=7&rm=3" 
               alt="Blinkit Logo" 
-              style={{ height: '32px', width: 'auto' }}
+              style={{ height: '62px', width: 'auto' }}
             />
           </Link>
           

@@ -3,7 +3,7 @@ import { Globe, Share2, Info, Users } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer style={{ padding: '4rem 0', background: '#fff', borderTop: '1px solid var(--border)' }}>
+    <footer style={{ padding: '4rem 0', background: '#ffffffff', borderTop: '1px solid var(--border)' }}>
       <div className="container">
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '3rem' }}>
           <div>
@@ -49,8 +49,8 @@ const Footer = () => {
           <div>
              <h3 style={{ marginBottom: '1.5rem', color: '#1f1f1f' }}>Download App</h3>
              <div className="flex flex-column gap-1">
-                <img src="https://blinkit.com/d946da3f707f10e4285d.png" alt="App Store" style={{ height: '40px', objectFit: 'contain' }} />
-                <img src="https://blinkit.com/152093a201309393300a.png" alt="Play Store" style={{ height: '40px', objectFit: 'contain' }} />
+                <img src="https://thf.bing.com/th/id/OIP.HHa0kPTSyJRUaeRBG9YgMwHaHa?w=192&h=192&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3" alt="App Store" style={{ height: '40px', objectFit: 'contain' }} />
+                <img src="https://thf.bing.com/th/id/OIP.iaolHeeQ2xsqp8CrZ9uREgHaEa?w=192&h=115&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3" alt="Play Store" style={{ height: '40px', objectFit: 'contain' }} />
              </div>
           </div>
         </div>
