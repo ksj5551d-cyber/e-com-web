@@ -5,60 +5,62 @@ import { motion } from 'framer-motion';
 
 const Header = () => {
   return (
-    <header className="header" style={{ position: 'sticky', top: 0, zIndex: 100, backgroundColor: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(10px)', borderBottom: '1px solid #f0f0f0' }}>
-      <div className="container flex align-center justify-between" style={{ height: 'var(--header-height)' }}>
-        {/* Logo & Location */}
-        <div className="flex align-center gap-6">
-          <Link to="/" className="logo" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
-            <img 
-              src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Blinkit-yellow-app-icon.png" 
-              alt="Blinkit Logo" 
-              style={{ height: '40px', width: 'auto' }}
-            />
+    <header className="header">
+      <div className="container">
+        {/* Left: Logo & Location */}
+        <div className="flex align-center">
+          <Link to="/" className="logo" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <div style={{ backgroundColor: '#f7d117', padding: '10px', borderRadius: '12px', display: 'flex', alignItems: 'center', boxShadow: '0 4px 10px rgba(247, 209, 23, 0.2)' }}>
+              <ShoppingCart size={22} color="#000" fill="#000" />
+            </div>
+            <span style={{ fontWeight: 900, fontSize: '1.6rem', color: '#000', letterSpacing: '-1.5px', display: 'flex', alignItems: 'center' }}>
+              QuickMart
+            </span>
           </Link>
           
-          <div className="location-selector flex align-center gap-2" style={{ borderLeft: '1px solid #eee', paddingLeft: '1.5rem', cursor: 'pointer' }}>
-            <div>
-              <div style={{ fontWeight: 800, fontSize: '0.85rem', color: '#000' }}>Delivery in 10 minutes</div>
-              <div className="flex align-center gap-1" style={{ fontSize: '0.75rem', color: '#666' }}>
-                Gurugram, Haryana, India <ChevronDown size={12} />
+          <div className="location-selector">
+            <div className="flex-column">
+              <div style={{ fontWeight: 800, fontSize: '0.8rem', color: '#000', lineHeight: 1.2 }}>Delivery in 10 minutes</div>
+              <div className="flex align-center" style={{ fontSize: '0.75rem', color: '#666', gap: '4px' }}>
+                Gurugram, Haryana <ChevronDown size={12} />
               </div>
             </div>
           </div>
         </div>
 
-        {/* Search Bar */}
-        <div className="search-container flex align-center" style={{ flex: 1, margin: '0 4rem', background: '#f8f9fa', padding: '0.75rem 1.25rem', borderRadius: '0.75rem', border: '1px solid #eee' }}>
+        {/* Center: Search Bar */}
+        <div className="search-container">
           <Search size={18} color="#666" />
           <input 
             type="text" 
+            className="search-input"
             placeholder='Search "milk", "bread", "snacks"' 
-            style={{ border: 'none', background: 'transparent', outline: 'none', marginLeft: '0.8rem', width: '100%', fontSize: '0.9rem', color: '#333' }}
           />
         </div>
 
-        {/* Actions */}
-        <div className="flex align-center gap-4">
-          <div style={{ padding: '0.5rem 1rem', cursor: 'pointer', fontWeight: 600, fontSize: '0.95rem', color: '#333' }}>Login</div>
+        {/* Right: Actions */}
+        <div className="flex align-center gap-6">
+          <div style={{ cursor: 'pointer', fontWeight: 600, fontSize: '0.95rem', color: '#333' }}>Login</div>
           
           <motion.button 
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="btn flex align-center gap-2" 
+            className="btn" 
             style={{ 
-              padding: '0.8rem 1.5rem', 
+              padding: '0.8rem 1.75rem', 
               borderRadius: '0.75rem', 
               backgroundColor: '#0c831f', 
               color: '#fff', 
-              border: 'none',
-              cursor: 'pointer',
-              fontWeight: 700
+              fontWeight: 700,
+              fontSize: '1rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.75rem',
+              boxShadow: '0 8px 20px rgba(12, 131, 31, 0.15)'
             }}
           >
             <ShoppingCart size={20} />
-            <div style={{ textAlign: 'left' }}>
-              <div style={{ fontSize: '0.9rem' }}>My Cart</div>
-            </div>
+            My Cart
           </motion.button>
         </div>
       </div>
