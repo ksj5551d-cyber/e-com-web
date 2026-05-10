@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductCard from '../components/ProductCard';
+import SEO from '../components/SEO';
 
 const products = [
   { id: 1, name: 'Premium Wireless Headphones', price: 299, category: 'Electronics', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format' },
@@ -13,6 +14,7 @@ const products = [
 const Products = () => {
   return (
     <div className="container" style={{ padding: '4rem 0' }}>
+      <SEO title="Our Products - QuickMart" description="Explore our wide range of fresh groceries, dairy, and household essentials." />
       <h2 style={{ fontSize: '3rem', marginBottom: '1rem' }}>All Products</h2>
       <p style={{ color: 'var(--text-muted)', marginBottom: '3rem' }}>Browse through our entire catalog of premium items.</p>
       

@@ -44,7 +44,7 @@ const Footer = () => {
               <Info size={24} color="#1f1f1f" />
               <Users size={24} color="#1f1f1f" />
             </div>
-            <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>© Blinkit Commerce Private Limited, 2016-2026</p>
+            <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>© E-Commerce Private Limited, 2016-2026</p>
           </div>
           <div>
              <h3 style={{ marginBottom: '1.5rem', color: '#1f1f1f' }}>Download App</h3>

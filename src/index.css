@@ -82,12 +82,50 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* Utils */
-.flex { display: flex; }
-.align-center { align-items: center; }
-.justify-between { justify-content: space-between; }
-.gap-1 { gap: 1rem; }
-.gap-2 { gap: 2rem; }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fdfdfd;
+  color: #111;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.shadow-premium {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+.py-6 { padding-top: 2rem; padding-bottom: 2rem; }
+.py-8 { padding-top: 3rem; padding-bottom: 3rem; }
+.py-12 { padding-top: 5rem; padding-bottom: 5rem; }
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: #111;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
 
 /* Scrollbar */
 ::-webkit-scrollbar {

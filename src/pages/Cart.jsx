@@ -1,10 +1,12 @@
 import React from 'react';
 import { ShoppingBag, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const Cart = () => {
   return (
     <div className="container" style={{ padding: '4rem 0', minHeight: '60vh' }}>
+      <SEO title="Your Cart - QuickMart" description="View and manage your grocery items in the cart." />
       <h2 style={{ fontSize: '3rem', marginBottom: '2rem' }}>Your Cart</h2>
       
       <div className="glass" style={{ padding: '4rem', borderRadius: '1.5rem', textAlign: 'center' }}>

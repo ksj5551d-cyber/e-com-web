@@ -4,12 +4,12 @@ import { ChevronRight } from 'lucide-react';
 
 const ProductSection = ({ title, products }) => {
   return (
-    <section className="product-section py-4">
+    <section className="product-section py-8">
       <div className="container">
-        <div className="flex justify-between align-center mb-1" style={{ marginBottom: '1.5rem' }}>
-          <h2 style={{ fontSize: '1.5rem' }}>{title}</h2>
-          <div className="flex align-center" style={{ color: 'var(--secondary)', cursor: 'pointer', fontWeight: 600 }}>
-            see all <ChevronRight size={20} />
+        <div className="flex justify-between align-center" style={{ marginBottom: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <h2 className="section-title" style={{ margin: 0 }}>{title}</h2>
+          <div className="flex align-center" style={{ color: '#0c831f', cursor: 'pointer', fontWeight: 700, fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: '4px' }}>
+            see all <ChevronRight size={18} />
           </div>
         </div>
         
